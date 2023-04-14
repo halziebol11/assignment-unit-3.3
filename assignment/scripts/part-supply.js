@@ -34,13 +34,14 @@ console.log('6. Showing supplyChanges...');
 for (let i = 0; i < supplyChanges.length; i++) {
     let x = supplyChanges[i];
     if (x > 0) {
-        console.log('Added x parts.');
+        console.log(`Added ${x} parts.`);
     }
     else if (x == 0) {
         console.log('No Change.');
     }
     else {
-        console.log('Removed x parts.');
+        x = Math.abs(x)
+        console.log(`Removed ${x} parts.`);
     }
 };
 
@@ -51,13 +52,14 @@ console.log('---  Stretch Goals  ---');
 console.log('7. Showing supplyChanges with "for of" loop');
 for (const x of supplyChanges) {
     if (x > 0) {
-        console.log('Added x parts.');
+        console.log(`Added ${x} parts.`);
     }
     else if (x == 0) {
         console.log('No Change.');
     }
     else {
-        console.log('Removed x parts.');
+        let p = Math.abs(x)
+        console.log(`Removed ${p} parts.`);
     }
 };
 
