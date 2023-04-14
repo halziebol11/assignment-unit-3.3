@@ -31,12 +31,12 @@ supplyChanges.push(25);
 //    - if the value is 0, log 'No Change.'
 //    - if the value is negative, format the log as 'Removed x parts.' 
 console.log('6. Showing supplyChanges...');
-for (let i = 0; i < supplyChanges.length, i++) {
+for (let i = 0; i < supplyChanges.length; i++) {
     let x = supplyChanges[i];
     if (x > 0) {
         console.log('Added x parts.');
     }
-    else if (x = 0) {
+    else if (x == 0) {
         console.log('No Change.');
     }
     else {
@@ -53,7 +53,7 @@ for (const x of supplyChanges) {
     if (x > 0) {
         console.log('Added x parts.');
     }
-    else if (x = 0) {
+    else if (x == 0) {
         console.log('No Change.');
     }
     else {
@@ -77,3 +77,10 @@ console.log(y);
 //    no more boxes can be filled.
 //    Then log how many boxes were filled, and how many parts are left over.
 console.log('9. Filling boxes with a "while" loop');
+let parts = 572;
+let fullBoxes = 0;
+while (parts >= 7) {
+    parts -=7;
+    fullBoxes++;
+}
+console.log(`There are ${fullBoxes} full boxes and ${parts} left over parts.`);
