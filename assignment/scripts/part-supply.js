@@ -70,7 +70,7 @@ console.log('8. Total supplies available is:');
 let y = 0;
 for (const x of supplyChanges) {
     y = y + x;
-}
+};
 console.log(y);
 
 // 9. We have a large stash of parts in our warehouse that we 
@@ -85,5 +85,5 @@ let fullBoxes = 0;
 while (parts >= 7) {
     parts -=7;
     fullBoxes++;
-}
+};
 console.log(`There are ${fullBoxes} full boxes and ${parts} left over parts.`);
